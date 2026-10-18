@@ -16,9 +16,11 @@ async function render() {
   document.querySelector('#freshness').textContent = `Snapshot refreshed ${refreshed} Irish time`;
   const metrics = document.querySelector('#metrics');
   const charts = document.querySelector('#macro-charts');
+  const householdCharts = document.querySelector('#household-charts');
   if (dashboard.series.length) {
     metrics.innerHTML = dashboard.series.map((series) => { const item = latest(series); return `<article class="card"><span class="metric-label">${series.title}</span><div class="metric-value">${number.format(item.value)} <small>${series.unit}</small></div><span class="metric-period">${item.period}</span>${sparkline(series)}</article>`; }).join('');
     charts.innerHTML = dashboard.series.filter((series) => series.section === 'Macro').map(chart).join('');
+    householdCharts.innerHTML = dashboard.series.filter((series) => series.section === 'Households and firms').map(chart).join('');
   } else metrics.innerHTML = '<div class="empty-state">The initial workflow has not yet completed a data refresh.</div>';
   document.querySelector('#sources-list').innerHTML = dashboard.sources.map((source) => `<article class="source"><div><a href="${source.url}" target="_blank" rel="noreferrer">${source.name}</a><p>${source.coverage}</p></div><p>${source.refresh}</p></article>`).join('');
   document.querySelector('#limitations').innerHTML = `<ul>${dashboard.limitations.map((item) => `<li>${item}</li>`).join('')}</ul>`;

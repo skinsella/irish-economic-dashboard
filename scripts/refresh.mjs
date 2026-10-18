@@ -10,6 +10,22 @@ const requests = [
   {
     id: 'unemployment', table: 'MUM01', title: 'Unemployment rate', unit: '%',
     selections: { STATISTIC: 'MUM01C02', C02076V02508: '316', C02199V02655: '-' }, section: 'Macro'
+  },
+  {
+    id: 'gdp-qoq', table: 'NAQ03', title: 'Real GDP', unit: '% quarterly change', transform: 'quarterlyChange',
+    selections: { STATISTIC: 'NAQ03S04', C02196V02652: '-' }, section: 'Macro'
+  },
+  {
+    id: 'mdd-qoq', table: 'NAQ05', title: 'Modified domestic demand', unit: '% quarterly change', transform: 'quarterlyChange',
+    selections: { STATISTIC: 'NAQ05S02', C03331V04018: '0165' }, section: 'Macro'
+  },
+  {
+    id: 'retail-sales', table: 'RSM08', title: 'Retail sales volume', unit: '% annual change',
+    selections: { STATISTIC: 'RSM08C06', C02583V03135: 'V3970' }, section: 'Households and firms'
+  },
+  {
+    id: 'property-prices', table: 'HPM09', title: 'Residential property price inflation', unit: '% annual change',
+    selections: { STATISTIC: 'HPM09C04', C02803V03373: '-' }, section: 'Households and firms'
   }
 ];
 
@@ -34,7 +50,10 @@ function extractSeries(dataset, request) {
     const value = dataset.value[valueAt(dataset, positions)];
     return { period: dataset.dimension[timeId].category.label[timeCode], value };
   }).filter(({ value }) => Number.isFinite(value));
-  return { ...request, observations: observations.slice(-24) };
+  const transformed = request.transform === 'quarterlyChange'
+    ? observations.map((point, index) => ({ ...point, value: index ? ((point.value / observations[index - 1].value) - 1) * 100 : null })).filter(({ value }) => Number.isFinite(value))
+    : observations;
+  return { ...request, observations: transformed.slice(-24) };
 }
 
 async function refresh() {

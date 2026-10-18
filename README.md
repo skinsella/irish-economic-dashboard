@@ -13,4 +13,4 @@ The workflow refreshes CSO series on weekdays and commits the validated snapshot
 
 ## Data boundary
 
-The first automated release contains CPI and seasonally adjusted monthly unemployment from CSO PxStat. The Central Bank, Department of Finance and NTMA feeds are registered in the source catalogue but deliberately remain unrendered until their source-specific parsers are validated. This prevents a release from presenting scraped, mislabelled or incompatible financial and fiscal observations as official data.
+The automated release contains CSO inflation, unemployment, real GDP, modified domestic demand, retail-sales volume and residential-property-price series. The Central Bank, Department of Finance and NTMA feeds are registered in the source catalogue but deliberately remain unrendered until their source-specific parsers are validated. This prevents a release from presenting scraped, mislabelled or incompatible financial and fiscal observations as official data.

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T18:30:42.974Z",
+  "generatedAt": "2026-10-18T18:36:10.140Z",
   "status": "refreshed",
   "series": [
     {
@@ -218,6 +218,444 @@
         {
           "period": "2026 September",
           "value": 5
+        }
+      ]
+    },
+    {
+      "id": "gdp-qoq",
+      "table": "NAQ03",
+      "title": "Real GDP",
+      "unit": "% quarterly change",
+      "transform": "quarterlyChange",
+      "selections": {
+        "STATISTIC": "NAQ03S04",
+        "C02196V02652": "-"
+      },
+      "section": "Macro",
+      "observations": [
+        {
+          "period": "2020Q3",
+          "value": 12.787180272629794
+        },
+        {
+          "period": "2020Q4",
+          "value": -4.550932762981441
+        },
+        {
+          "period": "2021Q1",
+          "value": 11.142628490129812
+        },
+        {
+          "period": "2021Q2",
+          "value": 2.7185957388931925
+        },
+        {
+          "period": "2021Q3",
+          "value": 4.714578351727949
+        },
+        {
+          "period": "2021Q4",
+          "value": -3.2236949762722955
+        },
+        {
+          "period": "2022Q1",
+          "value": 3.3249300581055685
+        },
+        {
+          "period": "2022Q2",
+          "value": 3.3362095898359145
+        },
+        {
+          "period": "2022Q3",
+          "value": 4.44215694037533
+        },
+        {
+          "period": "2022Q4",
+          "value": -1.7402991246812327
+        },
+        {
+          "period": "2023Q1",
+          "value": -4.95142566548592
+        },
+        {
+          "period": "2023Q2",
+          "value": 0.7416645757383433
+        },
+        {
+          "period": "2023Q3",
+          "value": 1.1933104291961927
+        },
+        {
+          "period": "2023Q4",
+          "value": -4.847256406544087
+        },
+        {
+          "period": "2024Q1",
+          "value": 2.298317154073226
+        },
+        {
+          "period": "2024Q2",
+          "value": 0.1011415610010058
+        },
+        {
+          "period": "2024Q3",
+          "value": 7.704994762297468
+        },
+        {
+          "period": "2024Q4",
+          "value": 1.765168446320664
+        },
+        {
+          "period": "2025Q1",
+          "value": 6.314605066053924
+        },
+        {
+          "period": "2025Q2",
+          "value": -4.147991354632219
+        },
+        {
+          "period": "2025Q3",
+          "value": 1.3895078521494408
+        },
+        {
+          "period": "2025Q4",
+          "value": -3.312340090533361
+        },
+        {
+          "period": "2026Q1",
+          "value": -7.805619448911328
+        },
+        {
+          "period": "2026Q2",
+          "value": 10.183474760261113
+        }
+      ]
+    },
+    {
+      "id": "mdd-qoq",
+      "table": "NAQ05",
+      "title": "Modified domestic demand",
+      "unit": "% quarterly change",
+      "transform": "quarterlyChange",
+      "selections": {
+        "STATISTIC": "NAQ05S02",
+        "C03331V04018": "0165"
+      },
+      "section": "Macro",
+      "observations": [
+        {
+          "period": "2020Q3",
+          "value": 9.860438621475364
+        },
+        {
+          "period": "2020Q4",
+          "value": -0.646410176639356
+        },
+        {
+          "period": "2021Q1",
+          "value": 1.0646440748730113
+        },
+        {
+          "period": "2021Q2",
+          "value": 1.8693197466262745
+        },
+        {
+          "period": "2021Q3",
+          "value": 9.523165827447544
+        },
+        {
+          "period": "2021Q4",
+          "value": -5.097349501681636
+        },
+        {
+          "period": "2022Q1",
+          "value": 5.210196052931049
+        },
+        {
+          "period": "2022Q2",
+          "value": 10.978228959038304
+        },
+        {
+          "period": "2022Q3",
+          "value": -2.9265983515259553
+        },
+        {
+          "period": "2022Q4",
+          "value": -6.124322308596996
+        },
+        {
+          "period": "2023Q1",
+          "value": 7.112082136527542
+        },
+        {
+          "period": "2023Q2",
+          "value": 3.0681672300911567
+        },
+        {
+          "period": "2023Q3",
+          "value": 0.7348667275595799
+        },
+        {
+          "period": "2023Q4",
+          "value": -3.5582299523279626
+        },
+        {
+          "period": "2024Q1",
+          "value": 1.6780865824299385
+        },
+        {
+          "period": "2024Q2",
+          "value": 0.7159168919960157
+        },
+        {
+          "period": "2024Q3",
+          "value": 1.2908969508123702
+        },
+        {
+          "period": "2024Q4",
+          "value": -1.9418809052955344
+        },
+        {
+          "period": "2025Q1",
+          "value": -4.31920674490911
+        },
+        {
+          "period": "2025Q2",
+          "value": 12.252993354606389
+        },
+        {
+          "period": "2025Q3",
+          "value": 2.6314073726349196
+        },
+        {
+          "period": "2025Q4",
+          "value": -8.451598968325557
+        },
+        {
+          "period": "2026Q1",
+          "value": 11.636944001110262
+        },
+        {
+          "period": "2026Q2",
+          "value": -13.228493286921928
+        }
+      ]
+    },
+    {
+      "id": "retail-sales",
+      "table": "RSM08",
+      "title": "Retail sales volume",
+      "unit": "% annual change",
+      "selections": {
+        "STATISTIC": "RSM08C06",
+        "C02583V03135": "V3970"
+      },
+      "section": "Households and firms",
+      "observations": [
+        {
+          "period": "2024 September",
+          "value": 0.1
+        },
+        {
+          "period": "2024 October",
+          "value": 1.4
+        },
+        {
+          "period": "2024 November",
+          "value": -1.2
+        },
+        {
+          "period": "2024 December",
+          "value": 1.4
+        },
+        {
+          "period": "2025 January",
+          "value": -0.4
+        },
+        {
+          "period": "2025 February",
+          "value": 1.9
+        },
+        {
+          "period": "2025 March",
+          "value": -0.1
+        },
+        {
+          "period": "2025 April",
+          "value": 3.1
+        },
+        {
+          "period": "2025 May",
+          "value": 1.9
+        },
+        {
+          "period": "2025 June",
+          "value": 3.6
+        },
+        {
+          "period": "2025 July",
+          "value": 3.5
+        },
+        {
+          "period": "2025 August",
+          "value": 3.5
+        },
+        {
+          "period": "2025 September",
+          "value": 3.6
+        },
+        {
+          "period": "2025 October",
+          "value": 1.9
+        },
+        {
+          "period": "2025 November",
+          "value": 2.2
+        },
+        {
+          "period": "2025 December",
+          "value": 0.2
+        },
+        {
+          "period": "2026 January",
+          "value": 3.2
+        },
+        {
+          "period": "2026 February",
+          "value": 1.1
+        },
+        {
+          "period": "2026 March",
+          "value": 0.9
+        },
+        {
+          "period": "2026 April",
+          "value": -0.4
+        },
+        {
+          "period": "2026 May",
+          "value": 1.1
+        },
+        {
+          "period": "2026 June",
+          "value": 1
+        },
+        {
+          "period": "2026 July",
+          "value": 2.7
+        },
+        {
+          "period": "2026 August",
+          "value": 4.3
+        }
+      ]
+    },
+    {
+      "id": "property-prices",
+      "table": "HPM09",
+      "title": "Residential property price inflation",
+      "unit": "% annual change",
+      "selections": {
+        "STATISTIC": "HPM09C04",
+        "C02803V03373": "-"
+      },
+      "section": "Households and firms",
+      "observations": [
+        {
+          "period": "2024 September",
+          "value": 9.9
+        },
+        {
+          "period": "2024 October",
+          "value": 9.7
+        },
+        {
+          "period": "2024 November",
+          "value": 9.6
+        },
+        {
+          "period": "2024 December",
+          "value": 8.9
+        },
+        {
+          "period": "2025 January",
+          "value": 8.3
+        },
+        {
+          "period": "2025 February",
+          "value": 8
+        },
+        {
+          "period": "2025 March",
+          "value": 7.6
+        },
+        {
+          "period": "2025 April",
+          "value": 7.6
+        },
+        {
+          "period": "2025 May",
+          "value": 7.8
+        },
+        {
+          "period": "2025 June",
+          "value": 7.9
+        },
+        {
+          "period": "2025 July",
+          "value": 7.5
+        },
+        {
+          "period": "2025 August",
+          "value": 7.5
+        },
+        {
+          "period": "2025 September",
+          "value": 7.5
+        },
+        {
+          "period": "2025 October",
+          "value": 7.3
+        },
+        {
+          "period": "2025 November",
+          "value": 6.8
+        },
+        {
+          "period": "2025 December",
+          "value": 6.8
+        },
+        {
+          "period": "2026 January",
+          "value": 7.1
+        },
+        {
+          "period": "2026 February",
+          "value": 6.7
+        },
+        {
+          "period": "2026 March",
+          "value": 6.7
+        },
+        {
+          "period": "2026 April",
+          "value": 6.3
+        },
+        {
+          "period": "2026 May",
+          "value": 6.1
+        },
+        {
+          "period": "2026 June",
+          "value": 5.6
+        },
+        {
+          "period": "2026 July",
+          "value": 5.4
+        },
+        {
+          "period": "2026 August",
+          "value": 5.1
         }
       ]
     }
