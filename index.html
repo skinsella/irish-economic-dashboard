@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="A source-led Irish economic dashboard">
     <title>Ireland economic dashboard</title>
-    <link rel="stylesheet" href="assets/styles.css?v=heatmap-20261018">
+    <link rel="stylesheet" href="assets/styles.css?v=connected-hubs-20261018">
   </head>
   <body>
     <header class="site-header">
@@ -24,6 +24,7 @@
         <button class="tab" data-tab="finance">Financial conditions</button>
         <button class="tab" data-tab="households">Households and firms</button>
         <button class="tab" data-tab="public">Public finance</button>
+        <button class="tab" data-tab="connected-hubs">ConnectedHubs</button>
         <button class="tab" data-tab="sources">Sources and methods</button>
       </nav>
 
@@ -51,9 +52,13 @@
       <section class="panel" id="finance"><div class="section-heading"><div><p class="eyebrow">Financial conditions</p><h2>Rates, credit and financial stability</h2></div><p>The approved Central Bank, NTMA and ECB feeds are registered in the source catalogue. Their series are added as machine-readable feeds after source-level refresh validation.</p></div><div class="empty-state">No financial series have yet passed the automated source validation.</div></section>
       <section class="panel" id="households"><div class="section-heading"><div><p class="eyebrow">Households and firms</p><h2>Income, consumption, property and enterprise</h2></div><p>These measures remain distinct from national accounts and financial-market indicators.</p></div><div id="household-charts" class="chart-grid"></div></section>
       <section class="panel" id="public"><div class="section-heading"><div><p class="eyebrow">Public finance</p><h2>Exchequer and debt</h2></div><p>Monthly Exchequer flows and NTMA funding data will be shown with their own release timing and definitions.</p></div><div class="empty-state">No public-finance series have yet passed the automated source validation.</div></section>
+      <section class="panel" id="connected-hubs">
+        <div class="section-heading"><div><p class="eyebrow">Innovation system framework</p><h2>ConnectedHubs and economic formation</h2></div><p>Framework and proposed programme design from the supplied shared chat. It is not an official ConnectedHubs strategy or a performance report.</p></div>
+        <div id="connected-hubs-content"></div>
+      </section>
       <section class="panel" id="sources"><div class="section-heading"><div><p class="eyebrow">Sources and methods</p><h2>Traceable evidence</h2></div><p>Every chart is linked to a published official source. Source coverage is not treated as a common frequency or denominator.</p></div><div id="sources-list" class="source-list"></div><div id="limitations" class="limitations"></div></section>
     </main>
-    <footer>Built from official public data. Last refresh is displayed above. This dashboard does not provide investment advice.</footer>
-    <script type="module" src="assets/app.js?v=heatmap-20261018"></script>
+    <footer>Built from official public data and a clearly labelled supplied design framework. Last refresh is displayed above. This dashboard does not provide investment advice.</footer>
+    <script type="module" src="assets/app.js?v=connected-hubs-20261018"></script>
   </body>
 </html>

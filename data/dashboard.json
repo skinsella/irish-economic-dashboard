@@ -684,8 +684,116 @@
       "url": "https://www.ntma.ie/business-areas/funding-and-debt-management",
       "coverage": "Debt and funding",
       "refresh": "Monthly or quarterly release check"
+    },
+    {
+      "name": "Department of Rural and Community Development and the Gaeltacht",
+      "url": "https://www.gov.ie/en/department-of-rural-and-community-development-and-the-gaeltacht/services/connected-hubs-fund/",
+      "coverage": "ConnectedHubs programme context and funding allocations",
+      "refresh": "Manual source review"
+    },
+    {
+      "name": "Supplied ChatGPT shared chat",
+      "url": "https://chatgpt.com/share/6ad51a52-3dc4-83eb-aae6-6faf61940c03",
+      "coverage": "ConnectedHubs design framework, proposed pilot, measures and presentation content",
+      "refresh": "User supplied snapshot"
     }
   ],
+  "connectedHubs": {
+    "context": [
+      {
+        "value": "400",
+        "label": "hubs onboarded",
+        "detail": "The Department announced the onboarding of the 400th Connected Hub on 13 November 2025"
+      },
+      {
+        "value": "€9m",
+        "label": "2021 Connected Hubs funding",
+        "detail": "Awarded to 118 successful applicants according to the Department’s funding page"
+      },
+      {
+        "value": "€5m",
+        "label": "2022 Connected Hubs funding",
+        "detail": "Allocated to 81 successful applicants according to the Department’s funding page"
+      }
+    ],
+    "principles": [
+      {
+        "title": "Combinatorial evolution",
+        "description": "Innovation comes from new combinations of skills, firms, technologies and facilities across hubs"
+      },
+      {
+        "title": "Emergence",
+        "description": "Create conditions for hubs to experiment, specialise and develop activities without prescribing one model everywhere"
+      },
+      {
+        "title": "Increasing returns",
+        "description": "Turn each successful collaboration into contacts, shared knowledge and opportunities for others"
+      },
+      {
+        "title": "Adaptation",
+        "description": "Use small experiments, measure results, stop failures and scale what works"
+      },
+      {
+        "title": "Path dependence",
+        "description": "Build shared infrastructure and open networks while avoiding isolated systems and rigid structures"
+      },
+      {
+        "title": "Economic formation",
+        "description": "Assess new firms, contracts, products and partnerships alongside workspace occupancy"
+      }
+    ],
+    "actions": [
+      {
+        "title": "Know the network",
+        "description": "Map skills, businesses, equipment and expertise across hubs"
+      },
+      {
+        "title": "Make introductions",
+        "description": "Help firms find customers, suppliers, collaborators and expertise in other hubs"
+      },
+      {
+        "title": "Solve problems together",
+        "description": "Enable hubs to share challenges and jointly develop solutions"
+      },
+      {
+        "title": "Fund experiments",
+        "description": "Support cross-hub projects with small grants, learn and scale successes"
+      },
+      {
+        "title": "Reward collaboration",
+        "description": "Track contracts, businesses, partnerships and jobs as well as occupancy"
+      },
+      {
+        "title": "Share what works",
+        "description": "Make successful practices easy for other hubs to copy and improve"
+      }
+    ],
+    "pilot": {
+      "totalEuro": 1000000,
+      "stages": [
+        {"period": "Months 1 to 3", "activity": "Map the network and establish evaluation"},
+        {"period": "Months 4 to 6", "activity": "Run matching experiments"},
+        {"period": "Months 7 to 9", "activity": "Finance new combinations"},
+        {"period": "Months 10 to 12", "activity": "Evaluate and scale"}
+      ],
+      "allocation": [
+        {"item": "Network mapping and evaluation", "euro": 150000, "share": 15},
+        {"item": "Matching infrastructure", "euro": 200000, "share": 20},
+        {"item": "Collaborative experimentation grants", "euro": 400000, "share": 40},
+        {"item": "Hub facilitation and training", "euro": 150000, "share": 15},
+        {"item": "Programme management", "euro": 100000, "share": 10}
+      ]
+    },
+    "measures": [
+      {"measure": "New cross-hub collaborations", "definition": "Collaborations involving participants from more than one hub"},
+      {"measure": "Projects reaching commercial delivery", "definition": "Cross-hub projects that reach a defined commercial delivery stage"},
+      {"measure": "Revenue attributable to cross-hub referrals", "definition": "Revenue reported as arising from a referral between hubs"},
+      {"measure": "New products and firms", "definition": "Products and firms emerging from network collaboration"},
+      {"measure": "Repeat collaborations", "definition": "Participants returning for further cross-hub work"},
+      {"measure": "Previously peripheral hubs gaining connections", "definition": "Hubs increasing their links within the network"}
+    ],
+    "centralQuestion": "What can someone in one of the 400 hubs do because the other 399 exist?"
+  },
   "heatmap": {
     "title": "Irish economic indicators",
     "asOf": "11 October 2026",
@@ -712,6 +820,8 @@
   },
   "limitations": [
     "Official data are release-based rather than real-time",
-    "The dashboard preserves the source observation period and revision status"
+    "The dashboard preserves the source observation period and revision status",
+    "The ConnectedHubs section separates verified programme context from design proposals in the supplied shared chat",
+    "The ConnectedHubs proposed measures have no observations, targets or reported outcomes in this dashboard"
   ]
 }
