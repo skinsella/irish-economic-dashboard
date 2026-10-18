@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A source-led Irish economic dashboard">
+    <title>Ireland economic dashboard</title>
+    <link rel="stylesheet" href="assets/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div>
+        <p class="eyebrow">Official Irish economic statistics</p>
+        <h1>Ireland economic dashboard</h1>
+        <p class="dek">A release-based view of domestic activity, financial conditions, households, firms and public finance</p>
+      </div>
+      <div class="freshness" id="freshness" aria-live="polite">Loading current snapshot</div>
+    </header>
+
+    <main>
+      <nav class="tabs" aria-label="Dashboard sections">
+        <button class="tab is-active" data-tab="overview">Overview</button>
+        <button class="tab" data-tab="macro">Macro</button>
+        <button class="tab" data-tab="finance">Financial conditions</button>
+        <button class="tab" data-tab="households">Households and firms</button>
+        <button class="tab" data-tab="public">Public finance</button>
+        <button class="tab" data-tab="sources">Sources and methods</button>
+      </nav>
+
+      <section class="panel is-active" id="overview">
+        <div class="section-heading">
+          <div><p class="eyebrow">Current official releases</p><h2>Economic pulse</h2></div>
+          <p>Values are displayed only where an observation is available. A date and source accompany every series.</p>
+        </div>
+        <div class="metric-grid" id="metrics"></div>
+        <div class="two-column">
+          <article class="card narrative">
+            <p class="eyebrow">Reading the data</p>
+            <h3>Use domestic measures alongside GDP</h3>
+            <p>GDP is retained as an important national-accounts measure, but should be read with GNI* and modified domestic demand when analysing conditions in Ireland.</p>
+          </article>
+          <article class="card narrative">
+            <p class="eyebrow">Refresh policy</p>
+            <h3>Automatic after source releases</h3>
+            <p>Official series are revised and release-based. The refresh workflow runs on weekdays and keeps the observation period visible.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel" id="macro"><div class="section-heading"><div><p class="eyebrow">Macro</p><h2>Prices and labour market</h2></div></div><div id="macro-charts" class="chart-grid"></div></section>
+      <section class="panel" id="finance"><div class="section-heading"><div><p class="eyebrow">Financial conditions</p><h2>Rates, credit and financial stability</h2></div><p>The approved Central Bank, NTMA and ECB feeds are registered in the source catalogue. Their series are added as machine-readable feeds after source-level refresh validation.</p></div><div class="empty-state">No financial series have yet passed the automated source validation.</div></section>
+      <section class="panel" id="households"><div class="section-heading"><div><p class="eyebrow">Households and firms</p><h2>Income, consumption, property and enterprise</h2></div><p>These measures will remain distinct from national accounts and financial-market indicators.</p></div><div class="empty-state">No household or firm series have yet passed the automated source validation.</div></section>
+      <section class="panel" id="public"><div class="section-heading"><div><p class="eyebrow">Public finance</p><h2>Exchequer and debt</h2></div><p>Monthly Exchequer flows and NTMA funding data will be shown with their own release timing and definitions.</p></div><div class="empty-state">No public-finance series have yet passed the automated source validation.</div></section>
+      <section class="panel" id="sources"><div class="section-heading"><div><p class="eyebrow">Sources and methods</p><h2>Traceable evidence</h2></div><p>Every chart is linked to a published official source. Source coverage is not treated as a common frequency or denominator.</p></div><div id="sources-list" class="source-list"></div><div id="limitations" class="limitations"></div></section>
+    </main>
+    <footer>Built from official public data. Last refresh is displayed above. This dashboard does not provide investment advice.</footer>
+    <script type="module" src="assets/app.js"></script>
+  </body>
+</html>
