@@ -20,6 +20,7 @@ async function render() {
   const heatmap = document.querySelector('#heatmap');
   const charts = document.querySelector('#macro-charts');
   const householdCharts = document.querySelector('#household-charts');
+  if (!heatmap) throw new Error('The page and script versions do not match. Reload the dashboard to receive the current release.');
   if (dashboard.series.length) {
     heatmap.innerHTML = renderHeatmap(dashboard.heatmap);
     charts.innerHTML = dashboard.series.filter((series) => series.section === 'Macro').map(chart).join('');
