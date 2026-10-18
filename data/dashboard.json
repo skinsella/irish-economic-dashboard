@@ -686,6 +686,30 @@
       "refresh": "Monthly or quarterly release check"
     }
   ],
+  "heatmap": {
+    "title": "Irish economic indicators",
+    "asOf": "11 October 2026",
+    "source": "Department of the Taoiseach Weekly Economic Indicators, 11 October 2026, supplemented by the Monthly Economic Bulletin, September 2026",
+    "note": "Cell shading ranks values within each row. It indicates relative position in the period, not whether a movement is economically favourable.",
+    "periods": ["Jul 25","Aug 25","Sep 25","Oct 25","Nov 25","Dec 25","Jan 26","Feb 26","Mar 26","Apr 26","May 26","Jun 26","Jul 26","Aug 26","Sep 26"],
+    "rows": [
+      {"label":"Manufacturing PMI","unit":"index","values":[53.2,51.6,51.6,50.9,52.8,52.2,52.2,53.1,53.7,54.9,55.9,54.9,55.1,55.4,55.5]},
+      {"label":"Services PMI","unit":"index","values":[50.9,50.6,53.5,56.7,58.5,54.8,54.5,51.8,50.7,49.7,50.8,54.2,55.2,55.4,54.1]},
+      {"label":"Construction PMI","unit":"index","values":[47.1,45.9,43.7,48.1,46.7,48.4,48.6,52.1,53.2,47.1,50.2,45.4,53,50.7,null]},
+      {"label":"Consumer sentiment","unit":"index","values":[59.1,61.1,61.7,59.9,61,61.2,64.7,65.2,56.7,53.3,59.4,62.2,61.6,63.2,61.1]},
+      {"label":"CPI inflation","unit":"% annual change","values":[1.7,2,2.7,2.9,3.2,2.8,2.7,2.7,3.6,3.7,3.6,3.4,3.4,3.7,4.1]},
+      {"label":"Core CPI inflation","unit":"% annual change","values":[1.8,2.1,2.8,2.8,3.1,2.7,2.8,2.8,2.7,2.6,2.9,2.9,3.2,2.9,3.1]},
+      {"label":"Container cost","unit":"US dollars","values":[3395,3151,2137,1782,2293,2458,2761,2245,2522,2684,2623,4209,5265,4744,4054]},
+      {"label":"Energy products","unit":"% annual change","values":[-9.4,-5.4,-13.5,-14.6,-12,-16.8,-20.9,-19.1,-0.2,24.4,34.2,37.2,45.6,64.7,null]},
+      {"label":"Construction costs","unit":"% annual change","values":[1.7,1.8,2,2,2,2,2.3,2.6,2.4,2.7,3.2,3.2,3.4,3.3,null]},
+      {"label":"EUR to GBP","unit":"pounds","values":[0.867,0.866,0.87,0.872,0.879,0.874,0.868,0.871,0.868,0.87,0.866,0.866,0.853,0.857,0.858]},
+      {"label":"EUR to USD","unit":"US dollars","values":[1.169,1.165,1.174,1.164,1.157,1.171,1.172,1.184,1.156,1.169,1.168,1.149,1.142,1.159,1.15]},
+      {"label":"Ireland 10 year yield","unit":"%","values":[2.931,2.957,2.944,2.895,2.907,3.057,2.995,2.938,3.219,3.256,3.218,3.136,3.245,3.387,3.58]},
+      {"label":"10 year spread to Bund","unit":"percentage points","values":[0.272,0.243,0.241,0.25,0.223,0.189,0.14,0.136,0.296,0.235,0.198,0.179,0.179,0.155,0.127]},
+      {"label":"Live Register","unit":"people","values":[182562,185026,168898,163864,163483,172224,170674,169507,168072,166312,167107,176935,191880,182517,167193]},
+      {"label":"Corporate insolvencies","unit":"quarterly count","values":[211,null,null,194,null,null,213,null,null,216,null,null,203,null,null]}
+    ]
+  },
   "limitations": [
     "Official data are release-based rather than real-time",
     "The dashboard preserves the source observation period and revision status"
