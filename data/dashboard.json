@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T15:11:20.569Z",
+  "generatedAt": "2026-11-04T15:27:26.922Z",
   "status": "refreshed",
   "series": [
     {
@@ -124,10 +124,6 @@
       "section": "Macro",
       "observations": [
         {
-          "period": "2024 October",
-          "value": 4.2
-        },
-        {
           "period": "2024 November",
           "value": 4.3
         },
@@ -193,7 +189,7 @@
         },
         {
           "period": "2026 March",
-          "value": 5
+          "value": 5.1
         },
         {
           "period": "2026 April",
@@ -205,19 +201,23 @@
         },
         {
           "period": "2026 June",
-          "value": 4.9
+          "value": 4.8
         },
         {
           "period": "2026 July",
-          "value": 5
+          "value": 4.8
         },
         {
           "period": "2026 August",
-          "value": 5
+          "value": 4.7
         },
         {
           "period": "2026 September",
-          "value": 5
+          "value": 4.7
+        },
+        {
+          "period": "2026 October",
+          "value": 4.8
         }
       ]
     },
