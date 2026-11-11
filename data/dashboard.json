@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T15:37:02.948Z",
+  "generatedAt": "2026-11-11T15:15:45.444Z",
   "status": "refreshed",
   "series": [
     {
@@ -13,10 +13,6 @@
       },
       "section": "Macro",
       "observations": [
-        {
-          "period": "2024 October",
-          "value": 0.7
-        },
         {
           "period": "2024 November",
           "value": 1
@@ -108,6 +104,10 @@
         {
           "period": "2026 September",
           "value": 4.1
+        },
+        {
+          "period": "2026 October",
+          "value": 4.3
         }
       ]
     },
