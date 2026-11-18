@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17T16:54:06.786Z",
+  "generatedAt": "2026-11-18T16:28:23.638Z",
   "status": "refreshed",
   "series": [
     {
@@ -562,10 +562,6 @@
       "section": "Households and firms",
       "observations": [
         {
-          "period": "2024 September",
-          "value": 9.9
-        },
-        {
           "period": "2024 October",
           "value": 9.7
         },
@@ -651,11 +647,15 @@
         },
         {
           "period": "2026 July",
-          "value": 5.4
+          "value": 5.3
         },
         {
           "period": "2026 August",
           "value": 5.1
+        },
+        {
+          "period": "2026 September",
+          "value": 4.7
         }
       ]
     }
